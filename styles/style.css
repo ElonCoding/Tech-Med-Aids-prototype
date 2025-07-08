@@ -31,7 +31,7 @@ body {
 
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1700px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -123,6 +123,19 @@ img {
 
 .btn-text:hover i {
     transform: translateX(5px);
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: var(--transition);
+    margin-right: 20px;
+}
+
+.dark-mode-toggle:hover {
+    color: var(--primary-color);
 }
 
 /* Header Styles */
@@ -627,6 +640,187 @@ footer {
 
 .footer-bottom-links a:hover {
     color: var(--primary-color);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    --primary-color: #8ab4f8;
+    --secondary-color: #a7d9a7;
+    --accent-color: #f28b82;
+    --text-color: #e8eaed;
+    --light-text: #bdc1c6;
+    --white: #202124;
+    --light-bg: #292a2d;
+    --border-color: #5f6368;
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode header {
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+}
+
+body.dark-mode .logo h1,
+body.dark-mode .logo span,
+body.dark-mode nav ul li a,
+body.dark-mode .menu-btn,
+body.dark-mode .section-header h2,
+body.dark-mode .section-header p,
+body.dark-mode .hero-content h1,
+body.dark-mode .hero-content p,
+body.dark-mode .feature-card h3,
+body.dark-mode .feature-card p,
+body.dark-mode .service-card h3,
+body.dark-mode .service-card p,
+body.dark-mode .about-content h2,
+body.dark-mode .about-content p,
+body.dark-mode .testimonial-card p,
+body.dark-mode .patient-info h4,
+body.dark-mode .patient-info p,
+body.dark-mode .contact-info h3,
+body.dark-mode .contact-info p,
+body.dark-mode .info-item p,
+body.dark-mode .footer-logo h2,
+body.dark-mode .footer-logo p,
+body.dark-mode .footer-links h3,
+body.dark-mode .footer-links ul li a,
+body.dark-mode .footer-contact h3,
+body.dark-mode .footer-contact p,
+body.dark-mode .cta-section h2,
+body.dark-mode .cta-section p {
+    color: var(--text-color);
+}
+
+body.dark-mode .btn-secondary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+body.dark-mode .btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+body.dark-mode .btn-text {
+    color: var(--primary-color);
+}
+
+body.dark-mode .btn-text:hover {
+    color: var(--primary-color);
+}
+
+body.dark-mode .hero,
+body.dark-mode .features,
+body.dark-mode .services,
+body.dark-mode .about,
+body.dark-mode .testimonials,
+body.dark-mode .contact,
+body.dark-mode footer,
+body.dark-mode .page-header,
+body.dark-mode .services-detailed,
+body.dark-mode .cta-section {
+    background-color: var(--light-bg);
+}
+
+body.dark-mode .container, header, nav, .feature-card, .service-card, .about-section, .testimonials-section, .contact-section, .newsletter-section, .footer {
+    transition: background-color 0.4s, color 0.4s;
+}
+ body.dark-mode .feature-card,
+ body.dark-mode .service-card,
+ body.dark-mode .testimonial-card,
+ body.dark-mode .contact-form,
+ body.dark-mode .newsletter-form {
+     background-color: var(--dark-secondary-bg);
+     color: var(--light-text-color);
+ }
+
+ body.dark-mode .footer-services h3,
+ body.dark-mode .footer-services ul li a {
+     color: var(--light-text-color);
+ }
+
+body.dark-mode .feature-card .icon,
+body.dark-mode .service-card .icon {
+    background-color: var(--light-bg);
+}
+
+body.dark-mode .feature-card .icon i,
+body.dark-mode .service-card .icon i {
+    color: var(--primary-color);
+}
+
+body.dark-mode .testimonial-card .quote i {
+    color: var(--primary-color);
+}
+
+body.dark-mode .contact-info .info-item i {
+    color: var(--primary-color);
+}
+
+body.dark-mode .footer-links ul li a:hover {
+    color: var(--primary-color);
+}
+
+body.dark-mode .footer-contact i {
+    color: var(--primary-color);
+}
+
+body.dark-mode .breadcrumbs a,
+body.dark-mode .breadcrumbs span {
+    color: var(--light-text);
+}
+
+body.dark-mode .breadcrumbs a:hover {
+    color: var(--primary-color);
+}
+
+body.dark-mode .emergency-contact h3,
+body.dark-mode .emergency-contact p {
+    color: var(--text-color);
+}
+
+body.dark-mode .emergency-contact i {
+    color: var(--primary-color);
+}
+
+body.dark-mode .emergency-dos h4,
+body.dark-mode .emergency-donts h4 {
+    color: var(--primary-color);
+}
+
+body.dark-mode .emergency-dos ul li,
+body.dark-mode .emergency-donts ul li {
+    color: var(--text-color);
+}
+
+body.dark-mode .emergency-dos i,
+body.dark-mode .emergency-donts i {
+    color: var(--primary-color);
+}
+
+body.dark-mode .directory-header h2,
+body.dark-mode .directory-card h3,
+body.dark-mode .directory-card p,
+body.dark-mode .directory-contact-info p {
+    color: var(--text-color);
+}
+
+body.dark-mode .directory-card .avatar i,
+body.dark-mode .directory-contact-item i {
+    color: var(--primary-color);
+}
+
+body.dark-mode .directory-add-btn,
+body.dark-mode .directory-call-btn,
+body.dark-mode .directory-message-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+body.dark-mode .directory-add-btn:hover,
+body.dark-mode .directory-call-btn:hover,
+body.dark-mode .directory-message-btn:hover {
+    background-color: #0d5bbd;
 }
 
 /* Responsive Styles */
