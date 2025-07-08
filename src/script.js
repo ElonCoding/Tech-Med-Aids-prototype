@@ -180,10 +180,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Create placeholder images for the demo
-    createPlaceholderSVG('.hero-image img', '#1a73e8', 'Healthcare Professionals');
-    createPlaceholderSVG('.service-card img', '#34a853', 'Medical Service');
-    createPlaceholderSVG('.about-image img', '#1a73e8', 'About Med-Aids');
-    createPlaceholderSVG('.patient-info img', '#ea4335', 'Patient');
+    createPlaceholderSVG('public/.hero-image img', '#1a73e8', 'Healthcare Professionals');
+    createPlaceholderSVG('public/.service-card img', '#34a853', 'Medical Service');
+    createPlaceholderSVG('public/.about-image img', '#1a73e8', 'About Med-Aids');
+    createPlaceholderSVG('public/.patient-info img', '#ea4335', 'Patient');
 
     // Dark Mode Toggle
     const darkModeToggle = document.getElementById('dark-mode-icon');

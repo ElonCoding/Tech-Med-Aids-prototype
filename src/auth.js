@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Redirect to dashboard or home page after successful login
                 setTimeout(() => {
-                    window.location.href = '../index.html';
+                    window.location.href = 'index.html';
                 }, 1500);
             }, 1000);
         });
