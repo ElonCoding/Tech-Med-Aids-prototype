@@ -558,9 +558,8 @@ function initEmergencyResponse() {
                     <div class="emergency-card-content">
                         <p>Recognizing the signs of a heart attack and taking immediate action can save lives. Common symptoms include chest pain, shortness of breath, and discomfort in other areas of the upper body.</p>
                         <div class="emergency-video">
-                            <img src="../assests/emergency-video-placeholder.svg" alt="Heart Attack Response Video" style="width:100%; height:200px; background-color:#f0f0f0; display:flex; align-items:center; justify-content:center;">
+                            <img src="../assests/heart.jpg" alt="Heart Attack Response Video" style="width:100%; height:auto; background-color:#f0f0f0; display:flex; align-items:center; justify-content:center;">
                             <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); font-size:50px; color:#1a73e8;">
-                                <i class="fas fa-play-circle"></i>
                             </div>
                         </div>
                         <div class="emergency-dos-donts">
@@ -595,9 +594,8 @@ function initEmergencyResponse() {
                     <div class="emergency-card-content">
                         <p>Time is critical when someone is having a stroke. Remember the acronym FAST: Face drooping, Arm weakness, Speech difficulties, Time to call emergency services.</p>
                         <div class="emergency-video">
-                            <img src="../assests/emergency-video-placeholder.svg" alt="Stroke Response Video" style="width:100%; height:200px; background-color:#f0f0f0; display:flex; align-items:center; justify-content:center;">
+                            <img src="../assests/stroke.jpg" alt="Heart Attack Response Video" style="width:100%; height:400px; background-color:#f0f0f0; display:flex; align-items:center; justify-content:center;">
                             <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); font-size:50px; color:#1a73e8;">
-                                <i class="fas fa-play-circle"></i>
                             </div>
                         </div>
                         <div class="emergency-dos-donts">

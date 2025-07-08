@@ -184,4 +184,32 @@ document.addEventListener('DOMContentLoaded', function() {
     createPlaceholderSVG('.service-card img', '#34a853', 'Medical Service');
     createPlaceholderSVG('.about-image img', '#1a73e8', 'About Med-Aids');
     createPlaceholderSVG('.patient-info img', '#ea4335', 'Patient');
+
+    // Dark Mode Toggle
+    const darkModeToggle = document.getElementById('dark-mode-icon');
+    if (darkModeToggle) {
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            // Save user preference
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+                darkModeToggle.classList.remove('fa-moon');
+                darkModeToggle.classList.add('fa-sun');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+                darkModeToggle.classList.remove('fa-sun');
+                darkModeToggle.classList.add('fa-moon');
+            }
+        });
+
+        // Check for saved dark mode preference
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            document.body.classList.add('dark-mode');
+            darkModeToggle.classList.remove('fa-moon');
+            darkModeToggle.classList.add('fa-sun');
+        } else {
+            darkModeToggle.classList.remove('fa-sun');
+            darkModeToggle.classList.add('fa-moon');
+        }
+    }
 });
