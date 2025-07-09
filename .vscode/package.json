@@ -1,5 +1,5 @@
 {
-  "name": "hackorbit---copy",
+  "name": "hackorbit",
   "version": "1.0.0",
   "description": "a basic website to deploy ",
   "main": "index.js",
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/ElonCoding/Tech-Med-Aids-prototype.git"
   },
   "keywords": [
-    "Hackorbit"
+    "hackorbit"
   ],
   "author": "Parikshit Sharma",
   "license": "ISC",
